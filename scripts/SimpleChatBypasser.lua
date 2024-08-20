@@ -212,6 +212,13 @@ local function convert(text)
     return converted
 end
 
+local function sendchat(msg)
+    if tcs.ChatVersion == Enum.ChatVersion.LegacyChatService then
+        game:GetService("ReplicatedStorage"):FindFirstChild("DefaultChatSystemChatEvents").SayMessageRequest:FireServer(msg,"All")
+    else
+        chat:SendAsync(msg)
+    end
+end
 
 -----[ MAIN TAB ]-----
 
@@ -223,7 +230,7 @@ local Input = MainTab:CreateInput({
             if text ~= "" then
                 print(Text)
                 print(convert(Text))
-                chat:SendAsync(convert(Text))
+                sendchat(convert(Text))
             end
    end,
 })
@@ -231,7 +238,7 @@ local Input = MainTab:CreateInput({
 local FixButton = MainTab:CreateButton({
     Name = "Fix Bypasses",
     Callback = function(Value)
-        chat:SendAsync("abcdefghijk/-_.,:;*")
+        sendchat("abcdefghijk/-_.,:;*")
     end,
 })
 
