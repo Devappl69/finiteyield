@@ -4290,8 +4290,9 @@ end
 CMDs = {}
 
 CMDs[#CMDs + 1] = {NAME = 'aimbot [teambased (true/false)]', DESC = 'Aimbot that works on most FPS games'}
-CMDs[#CMDs + 1] = {NAME = 'usercreation / userc', DESC = 'A good chatbypasser'}
-CMDs[#CMDs + 1] = {NAME = 'ouxie', DESC = 'A mid chatbypasser'}
+CMDs[#CMDs + 1] = {NAME = 'usercreation / userc', DESC = 'A good chat bypasser'}
+CMDs[#CMDs + 1] = {NAME = 'ouxie', DESC = 'A mid chat bypasser'}
+CMDs[#CMDs + 1] = {NAME = 'emojibypass', DESC = 'My own chat bypasser'}
 
 CMDs[#CMDs + 1] = {NAME = 'discord / support / help', DESC = 'Invite to the Finite Yield support server.'}
 CMDs[#CMDs + 1] = {NAME = 'console', DESC = 'Loads old Roblox console'}
@@ -6278,6 +6279,11 @@ end)
 addcmd('usercreation',{'userc'},function(args, speaker)
 	notify("Loading Custom Script",'UserCreation')
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/1price/usercreation/main/UserCreation.lua", true))()
+end)
+
+addcmd('emojibypass',{},function(args, speaker)
+	notify("Loading Custom Script",'Emoji Bypass')
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Devappl69/finiteyield/master/scripts/SimpleChatBypasser.lua", true))()
 end)
 
 addcmd('ouxie',{'ouxie'},function(args, speaker)
