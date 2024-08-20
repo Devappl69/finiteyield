@@ -4293,7 +4293,7 @@ CMDs[#CMDs + 1] = {NAME = 'aimbot [teambased (true/false)]', DESC = 'Aimbot that
 CMDs[#CMDs + 1] = {NAME = 'usercreation / userc', DESC = 'A good chat bypasser'}
 CMDs[#CMDs + 1] = {NAME = 'ouxie', DESC = 'A mid chat bypasser'}
 CMDs[#CMDs + 1] = {NAME = 'emojibypass', DESC = 'My own chat bypasser'}
-CMDs[#CMDs + 1] = {NAME = 'feflipt', DESC = 'z = backflip, x = frontflip, c = jump'}
+CMDs[#CMDs + 1] = {NAME = 'feflip', DESC = 'z = backflip, x = frontflip, c = jump'}
 
 CMDs[#CMDs + 1] = {NAME = 'discord / support / help', DESC = 'Invite to the Finite Yield support server.'}
 CMDs[#CMDs + 1] = {NAME = 'console', DESC = 'Loads old Roblox console'}
