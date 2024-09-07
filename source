@@ -4294,6 +4294,7 @@ CMDs[#CMDs + 1] = {NAME = 'usercreation / userc', DESC = 'A good chat bypasser'}
 CMDs[#CMDs + 1] = {NAME = 'ouxie', DESC = 'A mid chat bypasser'}
 CMDs[#CMDs + 1] = {NAME = 'emojibypass', DESC = 'My own chat bypasser'}
 CMDs[#CMDs + 1] = {NAME = 'feflip', DESC = 'z = backflip, x = frontflip, c = jump'}
+CMDs[#CMDs + 1] = {NAME = 'sirius', DESC = 'Loads the Sirius menu'}
 
 CMDs[#CMDs + 1] = {NAME = 'discord / support / help', DESC = 'Invite to the Finite Yield support server.'}
 CMDs[#CMDs + 1] = {NAME = 'console', DESC = 'Loads old Roblox console'}
@@ -6280,6 +6281,11 @@ end)
 addcmd('usercreation',{'userc'},function(args, speaker)
 	notify("Loading Custom Script",'UserCreation')
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/1price/usercreation/main/UserCreation.lua", true))()
+end)
+
+addcmd('sirius',{},function(args, speaker)
+	notify("Loading Sirius Menu",'Sirius')
+	loadstring(game:HttpGet('https://sirius.menu/sirius'))()
 end)
 
 addcmd('emojibypass',{},function(args, speaker)
